@@ -1,0 +1,50 @@
+body{
+    background-color: darkcyan;
+    font: {
+        family: Arial; 
+        size: 16px;
+        style: normal;
+        weight: normal; 
+    };
+};
+img{
+    width: 100%;
+    margin: 20px;
+    border: {
+        color: yellow;
+        radius: 20px;
+        style: solid;
+        width: 1px;
+    }
+};
+.container{
+    box-sizing: content-box;
+    border: 1px solid black;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    &-left{
+        background: gray;
+        width: 50%;
+        padding: .5em;
+        &:hover{
+            background-color: lightgray;
+        };
+    };
+    &-right{
+        background: darkgray;
+        width: 50%;
+        padding: .5em;
+        &:hover{
+            background-color: lightgray;
+        };
+    };
+    .title{
+        font-size: 2em;
+        margin: 0 0 2em 0;
+        text-transform: uppercase;
+    };
+    .description{
+        font-size: 1.3em;
+    };
+};
